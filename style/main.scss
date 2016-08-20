@@ -14,20 +14,14 @@ $container-width: 600px;
     margin: 0;
 }
 
-.settings, .gear {
+
+
+.icon {
   width: 36px;
   height: 36px;
   position: absolute;
-  right: 0;
-  top: 0;
-
 }
 
-
-.gear path {
-  fill: $c-red;
-
-}
 
 body {
   background-color: $c-gray;
