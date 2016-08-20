@@ -1,0 +1,42 @@
+$c-red:   #B53938;
+$c-dark:  #252525;
+$c-light: #F7F7FF;
+$c-gray:  #BFBFBF;
+$c-green: #54D974;
+$container-width: 600px;
+
+
+* {
+    font-family:'Open Sans Condensed', sans-serif;
+    color: $c-dark;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.settings, .gear {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+
+
+.gear path {
+  fill: $c-red;
+
+}
+
+body {
+  background-color: $c-gray;
+  width: 100%;
+}
+
+#container {
+  width: $container-width;
+  background-color: $c-light;
+  margin: auto;
+  padding: $container-width / 20;
+}

@@ -12,15 +12,18 @@ app.get('/', function (req, res) {
 
 //static xlsx
 app.use('/xlsx.js', express.static(__dirname + '/node_modules/xlsx/dist/xlsx.core.min.js'));
+app.use('/angular.js', express.static(__dirname + '/node_modules/angular/angular.js'));
+app.use('/main.js', express.static(__dirname + '/main.js'));
 
 //sass
 app.use(sassMiddleware({
-    src: __dirname,
+    src: path.join(__dirname, 'style'),
     dest: path.join(__dirname, 'public'),
     debug: true,
-    outputStyle: 'extended'
+    outputStyle: 'extended',
+    prefix: "/public"
 }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use("/public", express.static(path.join(__dirname, 'public')));
 
 //listen
 app.listen(3000, function () {
