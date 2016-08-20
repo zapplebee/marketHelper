@@ -48,3 +48,6 @@ Temporary Items
 
 # Node.js files
 /node_modules
+
+#compiled style
+/public/main.css
