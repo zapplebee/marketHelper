@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
+    "pug": "^2.0.0-beta5",
     "xlsx": "^0.8.0"
   }
 }
